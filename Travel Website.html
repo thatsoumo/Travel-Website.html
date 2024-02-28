@@ -1,0 +1,137 @@
+<header>
+  <h1>Travel Website</h1>
+  <marquee>Republic Day Sale 20% off on all domestic flight booking</marquee>
+
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Hotels</a>
+  <a href="#">Flights</a>
+  <a href="#">Cabs</a>
+  <a href="#">Trains</a>
+  <a href="#">Vacations</a>
+  <a href="#">Rentals</a>
+  <a href="#">Airport Cabs</a>
+  <a href="#">Home Stays</a>
+  <a href="#">Login</a>
+  <a href="#">Planner</a>
+ 
+</nav>
+<div>
+  <div class="Destination">
+    <h2>Paris,France</h2>
+    <p>Explore the romantic streets of Paris and visit iconic landmarks like the Eiffel Tower.</p>
+    <img src="https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/newsletter/eiffel-tower-in-paris-151-medium.jpg?1564742900" width="200" height="200">
+    
+  </div>
+  <div class="Destination">
+    <h2>Tokyo,Japan</h2>
+    <p>Experience the vibrant culture and modern technology in the bustling city of Tokyo.</p>
+    <img src="https://lh3.googleusercontent.com/p/AF1QipO9sg1RHEe7tDbrXPUz0HTy14J_uS-TogiG6_MD=s680-w680-h510" width="200" height="200">
+  </div>
+  <div class="Destination">
+    <h2>New Delhi,India</h2>
+    <p>Experience the vibrant culture and modern technology in the bustling city of New Delhi</p>
+    <img src="https://lh3.googleusercontent.com/p/AF1QipNttfURC-hArjD_nCFD7JDAA-J8mxlmoR8QRnIy=s680-w680-h510"  width="200"height="200">
+  </div>
+  <div class="Destination">
+    <h2>Sydney,Austrlaia</h2>
+    <p>best known for its harbourfront Sydney Opera House, with a distinctive sail-like design.</p>
+    <img src="https://lh3.googleusercontent.com/p/AF1QipNi_sCgQdueRGaGWWDbzwG-u24m2UVcsf8XOLgw=s680-w680-h510" width="200"height="200">
+  </div>
+  <div class="Destination">
+  <h2>Beijing,China</h2>
+  <p> Yet it’s known as much for modern architecture as its ancient sites such as the grand Forbidden City complex. </p>
+  <img src="https://lh5.googleusercontent.com/p/AF1QipMT-owNd7Te6Qye3epDAUnoIfHTiYp_6D6TuVkN=w540-h312-n-k-no" width="200"height="200">
+</div>
+<div class="Destination">
+    <h2>Moscow,Russia</h2>
+    <p>Moscow, on the Moskva River in western Russia, is the nation’s cosmopolitan capital.</p>
+    <img src="https://hblimg.mmtcdn.com/content/hubble/img/moscow/mmt/activities/m_activities_moscow_red_square_l_421_635.jpg"width="200" height="200">
+</div>
+<div class="Destination">
+  <h2>Jaipur</h2>
+  <p>Jaipur is a royal residence and former administrative headquarters of the rulers of the Jaipur State</p>
+  <img src="https://lh3.googleusercontent.com/proxy/FUY5Md3jGK1-IILHAKueGekCfhk7HSvahVrlFzdqn8kvAL6ZTqVTg5sN5Rn4u6w-yyvtLRsASNJhghIdsG4bNRPFKPLOJHdyAXrd2YACYfw2CJ5g-Q45c2I4_A_ZBJHp9Gg5z4iGRtJ9CJjae1DqlfbLE2zUYKc=s680-w680-h510" width="200"height="200">
+</div>
+</div>
+
+ 
+  </main>
+
+  <footer>
+    &copy; 2024 Travel Website. All rights reserved.
+</footer>
+
+<style>
+   
+  nav a {
+    color: #fff;
+        text-decoration: none;
+        padding: 45px;
+        margin: 0 10px;
+        color:black;
+        
+    }
+  
+  body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+  }
+
+header{
+  background-color: #333;
+  color: #fff;
+  padding: -1px;
+  text-align: center;
+} 
+  nav{
+    background-color:pink;
+    color:red;
+    cursor:pointer;
+    padding:10px;
+    
+  }
+footer{
+  padding:10px;
+  text-align:center;
+  color:blue;
+  cursor:pointer;
+  clear:both;
+}
+  .destination {
+    border: 1px solid #ddd;
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 30px;
+      cursor:pointer;
+      display:inline-block;
+
+     
+  }
+  main {
+      padding: 20px;
+  }
+  marquee{
+    color:yellowgreen;
+  }
+  
+</style>
+<script>
+
+// Select all destination divs
+let destinations = document.querySelectorAll('.Destination');
+
+// Add a click event listener to each destination
+destinations.forEach(destination => {
+  destination.addEventListener('click', function() {
+    let city = this.querySelector('h2').innerText;
+    alert(`You clicked on ${city}!`);
+  });
+});
+
+</script>
